@@ -1,0 +1,13 @@
+diff --git a/c/src/ssl/schannel.c b/c/src/ssl/schannel.c
+index daaf439..ba83f1e 100644
+--- a/c/src/ssl/schannel.c
++++ b/c/src/ssl/schannel.c
+@@ -2071,7 +2071,7 @@ static bool server_name_matches(const char *server_name, CERT_EXTENSION *alt_nam
+         }
+       }
+     }
+-    LocalFree(&alt_name_info);
++    LocalFree(alt_name_info);
+   }
+ 
+   if (!matched) {

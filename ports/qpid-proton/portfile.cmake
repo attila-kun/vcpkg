@@ -10,6 +10,8 @@ vcpkg_from_github(
     REF 77947c047f24fc7d0ddd6ba41fa14d3e8ccb3f49 # 0.30.0
     SHA512 21711081ae6fe5f791039a6295f652370e1762587b16be4fa12f5a3b4a29f6b5aee62ff25e96303ac82ba360a0682c7e92aae4419e81f9a3cf14c98fcd34b489 
     HEAD_REF next
+    PATCHES
+        "schannel-localfree-fix.patch"
 )
 
 vcpkg_configure_cmake(
